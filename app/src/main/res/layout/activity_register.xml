@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittxt_bg"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/edittxt_bg"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="100dp"
+        android:layout_alignEnd="@+id/password"
+        android:background="@drawable/button_background"
+        android:text="Register" />
+
+</RelativeLayout>

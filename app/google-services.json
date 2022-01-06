@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637817656538",
+    "project_id": "aura-vi",
+    "storage_bucket": "aura-vi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637817656538:android:fa5afdac0f12a7fd3ec1e3",
+        "android_client_info": {
+          "package_name": "com.example.aura_vi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637817656538-dkskeb86i02hf7d9cbtaam33o5p5k5e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEUxWxbtc0Ll4yFzgm8x27v42QaLIGIQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637817656538-dkskeb86i02hf7d9cbtaam33o5p5k5e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

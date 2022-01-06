@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1F1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:id="@+id/search_box"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:hint="Search products here!!!"
+            android:padding="13dp"
+            android:background="@drawable/edittxt_bg"
+            android:drawablePadding="5dp"/>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font\alice"
+                android:text="Popular Products"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_all_popular"
+                android:fontFamily="@font\alice"
+                android:layout_weight="1"
+                android:text="View All"
+                android:gravity="end"
+                android:layout_marginRight="7dp"
+                android:textSize="16sp"
+                android:textColor="@color/Blue"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/pop_rec"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font\alice"
+                android:text="Explore Products"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_all_Explore"
+                android:fontFamily="@font\alice"
+                android:layout_weight="1"
+                android:text="View All"
+                android:gravity="end"
+                android:layout_marginRight="7dp"
+                android:textSize="16sp"
+                android:textColor="@color/Blue"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/Explore_rec"/>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font\alice"
+                android:text="Recommended"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_all_recommended"
+                android:fontFamily="@font\alice"
+                android:layout_weight="1"
+                android:text="View All"
+                android:gravity="end"
+                android:layout_marginRight="7dp"
+                android:textSize="16sp"
+                android:textColor="@color/Blue"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommended_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font\alice"
+                android:text="Latest In Collection"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Latest_In_Collection"
+                android:fontFamily="@font\alice"
+                android:layout_weight="1"
+                android:text="View All"
+                android:gravity="end"
+                android:layout_marginRight="7dp"
+                android:textSize="16sp"
+                android:textColor="@color/Blue"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/latest_img"
+                    android:layout_width="280dp"
+                    android:layout_height="190dp"
+                    app:riv_corner_radius="14dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chair"/>
+                <TextView
+                    android:id="@+id/latest_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chair"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/latest_des"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Description"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/star_rating"
+                        android:layout_marginLeft="-5dp"/>
+                    <TextView
+                        android:id="@+id/latest_rat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="4.0"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+     </LinearLayout>
+
+
+</ScrollView>
